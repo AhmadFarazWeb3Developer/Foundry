@@ -12,8 +12,13 @@ contract RequireRevertTest is Test {
         requireRevert = new RequireRevert();
     }
 
-    function test_setValue() public { //fuzz test
-    vm.expectRevert("Value must be greater than 10");
+    function test_setValue() public {
+        vm.expectRevert("Value must be greater than 10");
         requireRevert.setValue(9);
+    }
+
+    function test_AlwaysRevert() public {
+        vm.expectRevert("This function always reverts");
+        requireRevert.alwaysRevert();
     }
 }
