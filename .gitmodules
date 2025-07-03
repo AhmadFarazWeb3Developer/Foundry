@@ -1,3 +1,6 @@
 [submodule "ZkSync/lib/forge-zksync-std"]
 	path = ZkSync/lib/forge-zksync-std
 	url = https://github.com/Moonsong-Labs/forge-zksync-std
+[submodule "demotest/lib/forge-std"]
+	path = demotest/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
