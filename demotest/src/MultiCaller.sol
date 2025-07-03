@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract MultiCaller {
+   
+    address public lastCaller;
+    uint256 public callCount;
+
+    function recordCall() public{
+        lastCaller=msg.sender;
+        callCount++;
+        
+    }
+}
